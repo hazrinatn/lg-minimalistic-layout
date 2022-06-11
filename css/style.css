@@ -1,0 +1,244 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+p, nav {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section a {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+h5 {
+  font-size: .8rem;
+  font-weight: bolder;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, main {
+  background: rgb(106, 117, 136);
+  color: white;
+}
+
+nav {
+  padding-top: 1rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > ul{
+  margin-top: 0;
+  padding-left: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: white;
+}
+
+nav > a {
+  width: 75px;
+  height: 30px;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 1px solid rgb(73, 72, 72);
+  border-radius: 3px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  height: 400px;
+}
+
+main h1 {
+  margin-top: 0;
+  padding-top: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+main p {
+  text-align: center;
+  max-width: 60%;
+  font-size: 1.15rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+main div {
+  margin-top: 1rem;
+  display: flex;
+  gap: .5rem;
+}
+
+.about, .services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+  padding: 2rem;
+}
+
+.about > p {
+  max-width: 350px;
+}
+
+.services {
+  background: rgb(221, 223, 226);
+  padding: 2rem;
+  height: 500px;
+}
+
+.services > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 350px;
+  margin: 1rem;
+}
+
+.volunteer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 350px;
+}
+
+.volunteer > p {
+  max-width: 480px;
+}
+
+footer {
+  background: rgb(25, 31, 41);
+  color: white;
+  margin-bottom: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .75rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid snow;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links > div {
+  margin-bottom: .5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-bottom: 1rem;
+}
+
+.site-map, .contribute {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site-map > span, 
+.contribute > span {
+  color:rgb(106, 117, 136);
+  font-weight: 400;
+}
+
+.site-links span + span,
+.contribute-links span + span {
+  margin-left: 1rem;
+}
+
+
+footer a {
+  color: white;
+}
+
+footer > p {
+  height: 50px;
+  margin-bottom: 0;
+  padding: 0 2rem 1rem 2rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+nav > span {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.img-placeholder {
+  background: rgb(106, 117, 136);
+  width: 250px;
+  height: 150px;
+  box-shadow: 1px 1px 1px rgb(166, 163, 163);
+}
+
+.services > a {
+  border: 1px solid black;
+  width: 25px;
+  height: 15px;
+}
+
+.email {
+  font-weight: bolder;
+}
